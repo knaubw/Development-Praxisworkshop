@@ -38,6 +38,7 @@ namespace Development_Praxisworkshop
                 options.AddPolicy("ClaimsTest", policy => policy.RequireClaim("Contacts.Read"));
             });
 
+
             // Enable Authentication globally
             services.AddControllersWithViews(options =>
                 {
