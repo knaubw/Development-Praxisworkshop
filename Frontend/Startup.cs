@@ -53,6 +53,7 @@ namespace Development_Praxisworkshop
             // Include Application Insights with config from appsettings.json
             services.AddApplicationInsightsTelemetry(Configuration.GetSection("ApplicationInsights").GetValue<string>("InstrumentationKey"));
 
+
             // Configure SignOut redirect (doesn't work though...)
             services.Configure<OpenIdConnectOptions>(OpenIdConnectDefaults.AuthenticationScheme, options =>
             {
